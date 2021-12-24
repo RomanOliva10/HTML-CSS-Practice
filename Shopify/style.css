@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial,  sans-serif;
+    color: white;
+}
+
+body{
+    background-color:#15141b;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.container{
+    height: 15px;
+    width: 100px;
+    filter: invert(100%);
+    background-image: url(img/shopify-plus-vector-logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    text-decoration:none;
+    padding:0px 12px;
+    display:block;
+}
+
+.nav li a:hover {
+    border: solid lightskyblue 2px;
+}
+
+:focus{
+    border: solid lightskyblue 2px;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+
+.g{
+    color: greenyellow;
+}
+
+
+
+main{
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    width: 80%;
+    position: relative;
+    gap: 2rem;
+}
+
+
+
+h1{
+    font-size: 4.5rem;
+    margin: 1rem 0;
+}
+img{
+    position: absolute;
+    right: 0;
+    margin: 1rem 3rem;
+    border-radius: 10px;
+    height: 50px;
+}
+
+h5{
+    color:#d0f224 ;
+    font-size: 1rem;
+}
+
+button{
+    color: #15141b;
+    background-color:#d0f224 ;
+    border: solid 0;
+    padding: 0.7rem 2rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+hr{
+    position: relative;
+    width: 500px;
+    border: solid 2px grey;
+    margin: 6rem 0;
+    transform: translate(500px, -300px) rotate(-60deg);
+    z-index: -1;
+}
+
+#hr1, #hr3, #hr4{
+    border: solid 2px #d0f224;
+}
+
+button:hover, img:hover {
+    border: solid lightskyblue 2px;
+}
+
+#hr2{
+    transform: translate(580px, -350px) rotate(-60deg);
+    margin: 8rem 0;
+}
+
+#hr3{
+    transform: translate(600px, -200px) rotate(-60deg);
+    margin: 10rem 0;
+}
+
+#hr4{
+    transform: translate(600px, -200px) rotate(-60deg);
+    margin: 10rem 0;
+}
+
+p{
+    line-height: 1.5;
+}

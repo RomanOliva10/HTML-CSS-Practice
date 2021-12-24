@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+:root{
+    --primary: #1e3932;
+    --lightPrimary: #008248;
+    --backgroundMain: #d4e9e2;
+    --backgroundHeader: #f3f1e7;
+    --fontColor: #000000;
+}
+
+
+body{
+    background-color: var(--backgroundFoot);
+}
+
+nav {
+    background-color: white;
+    font-size: 0.8rem;
+    height: 80px;
+    width: 100vw;
+    line-height: 40px;
+    position: fixed;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 60px;
+    list-style: none;
+}
+
+.rewards{
+    justify-self: end;
+    position: relative;
+    z-index: 10;
+    background-color: var(--primary);
+}
+
+.logo{
+    height: 45px;
+    width: 45px;
+    background-image: url(img/logo.png);
+    background-size: cover;
+}
+
+ul{
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+    padding:0px 12px;
+}
+
+li a {
+    text-decoration:none;
+    color: black;
+}
+
+.active{
+    padding-bottom: 30px;
+    border-bottom: solid 5px #008248;
+}
+
+
+h5{
+    padding-left: 70px;
+    color: white;
+}
+
+.btn{
+    border: solid black 1px;
+    border-radius: 50px;
+    padding: 4px 15px;
+}
+
+.btn-black{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 4px 15px;
+}
+
+
+.section1{
+    background-color: var(--backgroundMain);
+    height: 100vh;
+    padding: 10rem 4rem;
+    background-image: url(img/hero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info{
+    margin-top: 120px;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+button{
+    background-color: var(--lightPrimary);
+    border: solid 0;
+    border-radius: 20px;
+    padding: 0.4rem 2rem;
+    color:var(--backgroundMain);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 2.5rem 0 2rem 0;
+}
+
+.section2{
+    padding: 9rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.stepItems{
+    display: flex;
+    margin: 3rem 0;
+    gap: 4rem;
+}
+
+.stepItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.numberCircle {
+    margin: 1rem 0;
+    box-sizing: content-box;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border: 2px solid var(--lightPrimary);
+    text-align: center;
+    font: 32px Arial, sans-serif;
+}
+
+p{
+    color: var(--fontColor);
+    font-size: 0.9rem;
+}
+
+h4{
+    margin: 1.5rem 0;
+}
+
+a:link{
+    color: var(--lightPrimary);
+}
+
+.section3{
+    text-align: center;
+}
+
+.products{
+    background-color: #f1f7f5;
+    height: 170px;
+}
+
+.products h1{
+    padding: 45px;
+}
+
+.prices a{
+    text-decoration: none;
+    color: var(--fontColor);
+    font-size: 1.7rem;
+    padding: 16px 26px;
+}
+
+.prices span{
+    font-size: 0.8rem;
+}
+
+.coffe{
+    background-color: var(--backgroundMain);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product{
+    height: 230px;
+    width: 400px;
+    background-image: url(img/400.png);
+    background-size: cover;
+}
+
+.description{
+    text-align: left;
+    width: 300px;
+}
+
+.extras{
+    padding: 100px;
+}
+
+.text{
+    padding: 20px 290px;
+}
+
+.cards{
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-logo{
+    height: 100px;
+    width: 100px;
+    background-image: url(img/1-fun-freebies.jpg);
+    background-size: cover;   
+}
+
+.card-logo2{
+    height: 100px;
+    width: 100px;
+    background-image: url(img/2-order-and-pay-ahead.jpg);
+    background-size: cover;   
+}
+
+.card-logo3{
+    height: 100px;
+    width: 100px;
+    background-image: url(img/3-get-to-free-faster.jpg);
+    background-size: cover;   
+}
+
+.card-info{
+    padding: 30px;
+}
+.card-info h4{
+    margin: 10px;
+}
+
+.card a{
+    color: var(--lightPrimary);
+    font-weight: bold;
+}
+
+
+.section4{
+    background-color: var(--backgroundHeader);
+}
+
+
+.title-pay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    }
+    .title-pay p{
+    max-width: 700px;
+    text-align: center;
+    }
+    
+    .pay{
+    display: flex;
+    gap: 20px;
+    padding: 100px 0 20px 100px;
+    border-bottom: 1px solid grey ;
+    }
+    
+    .pay-form{
+    display: flex;
+    gap: 20px;
+    }
+    
+    .pay-form-img{
+    width: 200px;
+    height: 201px;
+    
+    }
+    
+    .pay-form-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+    
+    .pay-form-info{
+    max-width: 300px;
+    }
+    
+    .pay-form-info h3{
+    margin: 0 0 10px 0;
+    }
+    
+    

@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+} 
+
+* {
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+:root{
+    --blue:#3f4174;
+    --purple:#b53fd1;
+    --likes:#f0f5fb;
+    --titles:#707387;
+    --text:#b1b4bc;
+
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+  
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cards-container .card1{
+    margin: 0px 0px 20px 0px;
+    padding: 15px 20px;
+    background-image: url(img/bg.png);
+    color: white;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.cards-container .card1 .info{
+    padding: 25px 0px 0px 0px;
+    font-size: 0.8rem;
+}
+
+.cards-container .card1 #hamburger{
+    display:none;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.cards-container .card2{
+    background-color: white;
+    width: 187px;
+    margin: 0px 0px 20px 0px;
+    height: 130px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.cards-container .card2 button{
+    background: var(--likes);
+    padding: 5px 10px;
+    border-radius: 9px;
+    color: var(--blue);
+    font-weight: bold;
+    border: none;
+    margin-top: 8px;
+}
+
+.cards-container .card2 .active{
+    background-color: var(--blue);
+    color: var(--text);
+}
+
+.cards-container .card3{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 187px;
+    height: 115px;
+    margin: 0px 0px 20px 0px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.cards-container .col1 .orange{
+    color: orangered;
+}
+
+.cards-container .col1 .purple{
+    color: purple;
+}
+
+.cards-container .col1 .green{
+    color: green;
+}
+
+.cards-container .card3 .col2{
+    text-align: right;
+}
+
+.cards-container .card3 .col2 a{
+    color: var(--blue);
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 7px;
+    background: var(--blue);
+    justify-content: space-between;
+}
+
+.nav .nav-content {
+    align-items: center;
+    display: flex;
+}
+
+.nav-content h4{
+    padding: 0px 0px 0px 10px;
+}
+
+.nav-content p{
+    padding: 0px 10px 0px 60px;
+    color: grey;
+}
+
+.nav button{
+    background: var(--purple);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.container-comments .comment{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 140px;
+    border-radius: 10px;
+    width: 700px;
+    margin-top: 30px;
+}
+
+
+.comment .like{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--likes);
+    height: 40px;
+    width: 30px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    line-height: 30px;
+    padding-top: 9px;
+}
+
+.comment .info{
+    margin-left: -90px;
+}
+
+.comment .info h4{
+    color: var(--blue)
+}
+
+.comment .info button{
+    background: var(--likes);
+    padding: 5px 10px;
+    border-radius: 9px;
+    color: var(--blue);
+    font-weight: bold;
+    border: none;
+}
+
+
+.comment .info p{
+    color: var(--text)
+}
+
+.comment .like i{
+    margin-bottom: -10px;
+}
+
+.comment .answer .fas{
+    color: var(--likes);
+}
+
+.comment .answer span{
+    color: var(--titles);
+    font-weight: bold;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+  }
+
+@media screen and (max-width: 1150px){
+    main{
+        padding: 30px;
+    }
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .cards-container .card1{
+        width: 220px;
+        height: 150px;
+    }
+
+    .cards-container .card1 .info{
+        padding: 50px 0px 0px 0px;
+    }
+
+    
+
+    .cards-container .card2{
+        width: 220px;
+        margin: 0px 20px 0px 15px;
+        height: 150px;
+    }
+    .cards-container .card3{
+        width: 220px;
+        height: 150px
+    }
+}
+
+@media screen and (max-width: 750px){
+    main{
+        padding: 0px;
+    }
+    
+    .cards-container{
+        margin: 0px 0px -20px 0px;
+        width: 100vw;        
+    }
+
+    .cards-container .card1{
+        border-radius: 0px;
+        background-repeat: repeat;
+        background-size: cover;
+        height: 70px;
+        width: 100vw;
+    }
+
+    .cards-container .card1 .info{
+        padding: 0px 0px 0px 0px;
+    }
+
+    .cards-container .card1 #hamburger{
+        display: block;
+        float: right;
+        margin-top: -35px;
+    }
+
+    .cards-container .card2{
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: -20px;
+        border-radius: 0px;
+    }
+    .cards-container .card3{
+        display: none;
+        position: absolute;
+        top: 220px;
+        right: 0px;
+        border-radius: 0px;
+    }
+
+    .cards-container .card3 .col2{
+        margin: -93px 0px 0px 0px;
+    }
+
+    .nav {
+        border-radius: 0px;
+        width: 100vw;
+    }
+    
+    .nav-content p{
+        margin: 0px 0px 0px -65px;
+        color: white;
+    }
+
+    .nav-content h4{
+        display: none;
+    }
+
+    .nav-content .fa-lightbulb{
+        display: none;
+    }
+
+    .container-comments{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-comments .comment{
+        width: 600px;
+    }
+
+    .container-comments .comment .info{
+        margin-left: -30px;
+        font-size: 0.9rem;
+    }
+}

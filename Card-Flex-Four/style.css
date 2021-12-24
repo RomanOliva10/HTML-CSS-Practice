@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards-container{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.cards-container .card{
+    width: 25%;
+    height: 550px;
+    background: linear-gradient(138deg, rgba(105,175,245,1) 0%, rgba(158,109,231,1) 54%, rgba(237,10,211,1) 100%);
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 35px;
+}
+
+
+.cards-container .card .icon{
+    background: linear-gradient(138deg, rgba(105,175,245,1) 0%, rgba(158,109,231,1) 54%, rgba(237,10,211,1) 100%);
+    box-shadow: 0px 9px 22px -12px rgb(0 0 0);
+    width: 85px;
+    height: 85px;
+    font-size: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container .card h2{
+    font-weight: normal;
+}
+
+.cards-container .card h4{
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.cards-container .card .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.cards-container .card button{
+    width: 85%;
+    border: none;
+    padding: 8px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cards-container .cardtwo{
+    background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+    
+.cards-container .cardtwo .icontwo{
+    transform: rotate(-45deg);
+    background: linear-gradient(348deg, #ffec61, #f321d7);
+}
+
+.cards-container .cardthree{
+    background: linear-gradient(120deg, #27fa77, #9456f9);
+}
+
+.cards-container .cardthree .iconthree{
+    background: linear-gradient(120deg, #27fa77, #9456f9);
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+} 
+
+* {
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+:root{
+    --blue:#3f4174;
+    --purple:#b53fd1;
+    --likes:#f0f5fb;
+    --titles:#707387;
+    --text:#b1b4bc;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-btn{
+    display: flex;
+    gap: 550px;
+}
+
+.top-btn button{
+    background: var(--purple);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.comment{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 140px;
+    border-radius: 10px;
+    width: 700px;
+    margin-top: 30px;
+}
+
+
+.comment .like{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--likes);
+    height: 40px;
+    width: 30px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    line-height: 30px;
+    padding-top: 9px;
+}
+
+.comment .info{
+    margin-left: -90px;
+}
+
+.comment .info h4{
+    color: var(--blue)
+}
+
+.comment .info button{
+    background: var(--likes);
+    padding: 5px 10px;
+    border-radius: 9px;
+    color: var(--blue);
+    font-weight: bold;
+    border: none;
+}
+
+
+.comment .info p{
+    color: var(--text)
+}
+
+.comment .like i{
+    margin-bottom: -10px;
+}
+
+.comment .answer .fas{
+    color: var(--likes);
+}
+
+.comment .answer span{
+    color: var(--titles);
+    font-weight: bold;
+}
+
+.replies{
+    margin-top: 25px;
+    width: 700px;
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.replies h3{
+    padding: 15px 0px 0px 20px;
+}
+
+.replies .reply{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin: 0px 0px 0px 25px;
+    border-bottom: solid ;
+}
+
+.replies .reply .photo{
+    background-image: url(img/LiuTQnn6_400x400.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.replies .reply .user{
+    padding: 0px 270px 0px 0px;
+}
+
+.replies .reply .user p{
+    padding-bottom: 10px;
+}
+
+.add-comment{
+    margin-top: 25px;
+    width: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 330px;
+}
+
+.add-comment h2{
+    margin: 25px;
+}
+
+
+.add-comment textarea {
+    width: 645px;
+    display: flex;
+    align-self: center;
+}
+
+.add-comment .bottom-btn{
+    display: flex;
+    justify-content: space-around;
+    gap: 450px;
+    padding-top: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

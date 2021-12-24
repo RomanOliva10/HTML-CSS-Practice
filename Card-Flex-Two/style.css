@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container{
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.container .info{
+    float: right;
+    width: 48%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container .info .title h5{
+    color: gray;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.container .info p{
+    font-size: 1.2rem;
+    width: 93%;
+    color: gray;
+}
+
+.container .info .price{
+    font-size: 2.5rem;
+    display: flex;
+    align-items: end;
+    gap: 25px;
+}
+
+.container .info .price button{
+    border-radius: 50px;
+    margin-top: 25px;
+    background: rgb(156, 235, 213);
+    color: white;
+    border: none;
+    padding: 16px 45px;
+}
