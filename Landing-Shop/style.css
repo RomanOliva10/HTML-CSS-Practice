@@ -49,8 +49,8 @@ input{
 
 .cards-container .card{
     width: 25%;
-    height: 350px;
-    background-color:rgb(29, 40, 60);
+    height: 360px;
+    background-color: rgb(29, 40, 60);
     text-align: center;
     color: white;
     border-radius: 10px;
